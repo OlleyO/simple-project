@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-import HomeView from "@views/home";
+import AppsView from "@views/apps";
 
-export const Home: NextPage = () => {
+export const Apps: NextPage = () => {
   return (
     <div>
       <Head>
@@ -12,9 +12,9 @@ export const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomeView />
+      <AppsView />
     </div>
   );
 };
 
-export default Home;
+export default Apps;
