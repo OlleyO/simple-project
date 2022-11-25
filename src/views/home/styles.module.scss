@@ -1,0 +1,34 @@
+@use "@styles/typography.scss";
+
+.section1 {
+  display: flex;
+
+  justify-content: space-between;
+
+  .left {
+    margin-right: 109px;
+    max-width: 445px;
+    margin-top: 105px;
+
+    .title {
+      @extend .large-heading;
+
+      margin-bottom: 25px;
+    }
+
+    .text {
+      @extend .primary-text;
+
+      color: var(--primary-text-color);
+
+      margin-bottom: 65px;
+    }
+  }
+
+  .right {
+    position: relative;
+
+    width: 693px;
+    height: 598px;
+  }
+}

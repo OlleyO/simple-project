@@ -1,36 +1,28 @@
 import NextLink, { LinkProps } from "next/link";
+import { PropsWithChildren } from "react";
+import cn from "classnames";
 
 import styles from "./styles.module.scss";
 
 interface Props {
-  variant: "link" | "button";
-  icon: JSX.Element;
+  className?: string;
+  variant: "link" | "button" | "button-outlined";
+  icon?: JSX.Element;
 }
 
-const Link: React.FC<
-  LinkProps & React.HTMLProps<HTMLAnchorElement> & Props
-> = ({
-  as,
+const Link: React.FC<PropsWithChildren<LinkProps & Props>> = ({
   children,
-  href,
-  replace,
-  scroll,
-  shallow,
-  passHref,
   variant,
   icon,
-  ...rest
+  className,
+  ...props
 }) => {
   return (
     <NextLink
-      as={as}
-      href={href}
-      passHref={passHref}
-      replace={replace}
-      scroll={scroll}
-      shallow={shallow}
+      className={cn(styles["link-default"], styles[variant], className)}
+      {...props}
     >
-      <a {...rest}>{children}</a>
+      {children}
     </NextLink>
   );
 };

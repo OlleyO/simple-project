@@ -1,0 +1,26 @@
+.link-default {
+  text-decoration: none;
+}
+
+.button-outlined {
+  color: var(--primary-color);
+  border: 1.4px solid var(--primary-color);
+}
+
+// .link {
+// }
+
+.button {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.button,
+.button-outlined {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 17px 40px;
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+}
