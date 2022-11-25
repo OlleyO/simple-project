@@ -1,0 +1,29 @@
+@use "../../../styles/mixins.scss";
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  padding: 56px 191px;
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .link {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--link-color);
+
+    text-decoration: none;
+
+    &.active {
+      font-weight: 700;
+      color: var(--active-link-color);
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}

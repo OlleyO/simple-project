@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  font-weight: 700;
+
+  align-items: center;
+
+  .icon {
+    font-size: 26px;
+
+    margin-right: 12px;
+    width: 41px;
+    height: 41px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+    background: var(--primary-color);
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+}
