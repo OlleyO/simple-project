@@ -1,4 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --page-bg: #fff;
+  --primary-color: #458ff6;
+
+  --active-link-color: #1f1534;
+  --link-color: #1f153480;
 }
