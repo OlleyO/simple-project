@@ -17,10 +17,15 @@
 
 .button,
 .button-outlined {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 18px;
+  line-height: 18px;
   padding: 17px 40px;
-  width: 200px;
-  height: 56px;
+  max-width: 200px;
+  max-height: 56px;
   border-radius: 55px;
+  text-align: center;
 }

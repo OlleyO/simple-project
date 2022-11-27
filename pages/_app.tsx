@@ -1,4 +1,6 @@
-import "../src/styles/globals.scss";
+import "@styles/globals.scss";
+import "@styles/icons.scss";
+
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {

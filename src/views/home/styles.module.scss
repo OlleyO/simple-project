@@ -5,6 +5,8 @@
 
   justify-content: space-between;
 
+  margin-bottom: 192px;
+
   .left {
     margin-right: 109px;
     max-width: 445px;
@@ -30,5 +32,59 @@
 
     width: 693px;
     height: 598px;
+  }
+}
+
+.section2 {
+  margin: 0 auto;
+  margin-bottom: 221px;
+
+  .title {
+    position: relative;
+    padding-bottom: 26px;
+    margin-bottom: 33px;
+    text-align: center;
+
+    @extend .big-heading;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 2px;
+      border-radius: 5px;
+      background: black;
+
+      bottom: 0;
+      left: calc(50% - 28px);
+    }
+  }
+
+  .text {
+    text-align: center;
+    color: var(--primary-text-color);
+
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    max-width: 952px;
+
+    @extend .secondary-text;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    row-gap: 37px;
+    column-gap: 34px;
+
+    margin-bottom: 69px;
+  }
+
+  .learn-more-button {
+    margin: 0 auto;
   }
 }
